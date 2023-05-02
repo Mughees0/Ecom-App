@@ -2,18 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-input, textarea {
+input,
+textarea {
   @apply border-2 border-gray-300 px-2 h-8 w-full rounded-lg focus:border-blue-400 outline-none mb-2;
 }
 
-h1{
-    @apply text-blue-400 mb-2 text-xl
+h1 {
+  @apply text-blue-400 mb-2 text-xl;
 }
 
-label{
-    @apply text-blue-400
+label {
+  @apply text-blue-400;
 }
 
-.btn-primary{
-  @apply bg-blue-400 rounded-lg text-white px-4 py-2
+.btn-primary {
+  @apply bg-blue-400 rounded-lg text-white px-4 py-2;
+}
+
+table.basic thead tr td {
+  @apply bg-blue-400;
+}
+
+table.basic tr td {
+  @apply border border-blue-400 p-1;
+}
+
+table.basic a {
+  @apply bg-blue-400 text-white text-sm py-1 px-2 rounded-lg inline-flex gap-1;
 }

@@ -1,13 +1,13 @@
 import { useSession, signIn, signOut } from "next-auth/react";
 import Nav from "@/components/Nav";
 
-export default function Layout({children}) {
+export default function Layout({ children }) {
   const { data: session } = useSession();
   if (session) {
     return (
       <main className="bg-blue-400 w-screen h-screen flex ">
         <Nav />
-        <section className="bg-white flex flex-grow my-2 mr-2 rounded-lg p-2">
+        <section className="bg-white flex-grow my-2 mr-2 rounded-lg p-2">
           {children}
         </section>
         {/* <button
@@ -30,4 +30,3 @@ export default function Layout({children}) {
     </main>
   );
 }
-
