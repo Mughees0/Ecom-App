@@ -7,7 +7,7 @@ export default function Layout({children}) {
     return (
       <main className="bg-blue-400 w-screen h-screen flex ">
         <Nav />
-        <section className="bg-yellow-200 flex flex-grow my-2 mr-2 rounded-lg p-2">
+        <section className="bg-white flex flex-grow my-2 mr-2 rounded-lg p-2">
           {children}
         </section>
         {/* <button
